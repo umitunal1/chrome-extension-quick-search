@@ -1,0 +1,28 @@
+{
+  "name": "Quick searcher",
+  "version": "1.0",
+  "description": "Fast search selected text in your browser on Google",
+  "browser_action": {
+    "default_icon": "images/search.png"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Search selected text on Google"
+    }
+  },
+  "manifest_version": 2
+}
